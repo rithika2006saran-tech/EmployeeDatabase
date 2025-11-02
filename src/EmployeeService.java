@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class EmployeeService {
-    // ✅ Add Employee
+    // Add Employee
     public static void addEmployee(Scanner sc)  throws Exception  {
         System.out.print("Enter Employee ID: ");
         int empId = sc.nextInt();
@@ -42,7 +42,7 @@ public class EmployeeService {
         }
     }
 
-    // ✅ Update Employee
+    // Update Employee
     public static void updateEmployee(Scanner sc) throws Exception {
         System.out.print("Enter Employee ID to update: ");
         int empId = sc.nextInt();
@@ -69,7 +69,7 @@ public class EmployeeService {
         }
     }
 
-    // ✅ Delete Employee
+    // Delete Employee
     public static void deleteEmployee(Scanner sc)  throws Exception {
         System.out.print("Enter Employee ID to delete: ");
         int empId = sc.nextInt();
@@ -89,7 +89,7 @@ public class EmployeeService {
         }
     }
 
-    // ✅ View All Employees
+    // View All Employees
     public static void viewAllEmployees()  throws Exception {
         String sql = """
             SELECT e.emp_id, e.first_name || ' ' || e.last_name AS full_name,
@@ -123,7 +123,7 @@ public class EmployeeService {
         }
     }
 
-    // ✅ Search Employee by ID
+    // Search Employee by ID
     public static void searchById(Scanner sc)  throws Exception {
         System.out.print("Enter Employee ID: ");
         int empId = sc.nextInt();
@@ -157,7 +157,7 @@ public class EmployeeService {
         }
     }
 
-    // ✅ Search Employee by Name
+    // Search Employee by Name
     public static void searchByName(Scanner sc)  throws Exception {
         sc.nextLine();
         System.out.print("Enter Employee Name: ");
@@ -193,7 +193,7 @@ public class EmployeeService {
         }
     }
 
-    // ✅ View Employees by Department
+    // View Employees by Department
     public static void viewByDepartment(Scanner sc)  throws Exception {
         System.out.print("Enter Department ID: ");
         int deptId = sc.nextInt();
@@ -224,7 +224,7 @@ public class EmployeeService {
         }
     }
 
-    // ✅ View Employees by Job
+    // View Employees by Job
     public static void viewByJob(Scanner sc)  throws Exception {
         System.out.print("Enter Job ID: ");
         int jobId = sc.nextInt();
@@ -255,3 +255,4 @@ public class EmployeeService {
         }
     }
 }
+
