@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class DepartmentService {
 
-    // ✅ Add Department
+    // Add Department
     public static void addDepartment(Scanner sc)  throws Exception {
         System.out.print("Enter Department ID: ");
         int id = sc.nextInt();
@@ -27,7 +27,7 @@ public class DepartmentService {
         }
     }
 
-    // ✅ Update Department
+    // Update Department
     public static void updateDepartment(Scanner sc)  throws Exception  {
         System.out.print("Enter Department ID to update: ");
         int id = sc.nextInt();
@@ -54,7 +54,7 @@ public class DepartmentService {
         }
     }
 
-    // ✅ Delete Department
+    // Delete Department
     public static void deleteDepartment(Scanner sc)  throws Exception {
         System.out.print("Enter Department ID to delete: ");
         int id = sc.nextInt();
@@ -74,7 +74,7 @@ public class DepartmentService {
         }
     }
 
-    // ✅ View All Departments
+    // View All Departments
     public static void viewDepartments()  throws Exception  {
         String sql = "SELECT * FROM departments ORDER BY dept_id";
 
@@ -95,3 +95,4 @@ public class DepartmentService {
         }
     }
 }
+
