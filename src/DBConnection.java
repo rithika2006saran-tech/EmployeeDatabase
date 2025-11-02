@@ -7,7 +7,8 @@ public class DBConnection {
         return DriverManager.getConnection(
                 "jdbc:oracle:thin:@localhost:1521:xe",
                 "system",        // your Oracle username
-                "s7775484"  // your Oracle password
+                "password"  // your Oracle password
         );
     }
 }
+
